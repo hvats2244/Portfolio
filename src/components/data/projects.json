@@ -9,7 +9,7 @@
   },
   {
     "key": 2,
-    "title": "To-do list",
+    "title": "Task Manager",
     "imageSrc": "https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG8lMjBkbyUyMGxpc3R8ZW58MHx8MHx8fDA%3D",
     "description": "A simple and responsive To-Do List built using React and Tailwind CSS, allowing users to manage tasks efficiently in real-time.",
     "demo": "https://todolist-eta-sable.vercel.app/",
@@ -25,10 +25,10 @@
   },
   {
     "key": 4,
-    "title": "React Firebase App",
-    "imageSrc": "https://cdn.pixabay.com/photo/2021/03/02/01/07/cyberpunk-6061251_640.jpg",
-    "description": "This is a project made with complete React js.",
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Gym Webapp",
+    "imageSrc": "https://t4.ftcdn.net/jpg/00/99/82/15/360_F_99821575_nVEHTBXzUnTcLIKN6yOymAWAnFwEybGb.jpg",
+    "description": "A responsive gym web app built using HTML and Bootstrap, offering workout plans, schedules, and fitness-related features.",
+    "demo": "https://gym-webapp-brown.vercel.app/",
+    "source": "https://github.com/hvats2244/gym-webapp"
   }
 ]
