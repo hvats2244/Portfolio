@@ -1,0 +1,34 @@
+[
+  {
+    "key": 1,
+    "title": "HomeyStay(Rental website)",
+    "imageSrc": "/assets/company/Homeystay.jpg",
+    "description": "HomeyStay is a rental website built with Node.js, Express, EJS, Bootstrap, MongoDB, Render, and Cloudinary for dynamic listings.",
+    "demo": "https://airbnb-clone-vz1z.onrender.com/listings",
+    "source": "https://github.com/hvats2244/HomeyStay"
+  },
+  {
+    "key": 2,
+    "title": "To-do list",
+    "imageSrc": "https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG8lMjBkbyUyMGxpc3R8ZW58MHx8MHx8fDA%3D",
+    "description": "A simple and responsive To-Do List built using React and Tailwind CSS, allowing users to manage tasks efficiently in real-time.",
+    "demo": "https://todolist-eta-sable.vercel.app/",
+    "source": "https://github.com/hvats2244/Todolist"
+  },
+  {
+    "key": 3,
+    "title": "Simon-game",
+    "imageSrc": "https://i.pinimg.com/474x/8f/3f/f1/8f3ff1f837ac9d14efe22d220b5512c1.jpg",
+    "description": "A simple Simon Game implementation using JavaScript, HTML, and CSS for fun memory testing",
+    "demo": "https://hvats2244.github.io/Simon-game/",
+    "source": "https://github.com/hvats2244/Simon-game"
+  },
+  {
+    "key": 4,
+    "title": "React Firebase App",
+    "imageSrc": "https://cdn.pixabay.com/photo/2021/03/02/01/07/cyberpunk-6061251_640.jpg",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]

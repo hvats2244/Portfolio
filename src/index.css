@@ -1,0 +1,318 @@
+:root {
+  --box-shadow: 5px 5px 10px 10px rgba(16, 165, 211, 0.5);
+  --bg-color: rgb(40, 47, 97);
+}
+
+body {
+  background-color: rgb(0, 3, 6);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navbar Section */
+      
+          .menu-icon {
+            width: 24px;
+            height: 18px;
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+          }
+          .menu-icon span {
+            background-color: #000;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            left: 0;
+            transition: 0.3s ease;
+            border-radius: 2px;
+          }
+          .menu-icon .line1 {
+            top: 0;
+          }
+          .menu-icon .line2 {
+            top: 7.5px;
+          }
+          .menu-icon .line3 {
+            top: 15px;
+          }
+          .menu-icon.open .line1 {
+            transform: rotate(45deg);
+            top: 7.5px;
+          }
+          .menu-icon.open .line2 {
+            opacity: 0;
+          }
+          .menu-icon.open .line3 {
+            transform: rotate(-45deg);
+            top: 7.5px;
+          }
+
+          /* Override Bootstrap focus outline for toggler */
+          .navbar-toggler:focus {
+            outline: none;
+            box-shadow: none;
+          }
+
+          .navbar-nav .nav-link {
+            color: #000;
+            transition: color 0.3s ease;
+          }
+          .navbar-nav .nav-link:hover,
+          .navbar-nav .nav-link:focus {
+            color: #08d0df !important;
+            text-decoration: none;
+          }
+
+/* Home Section */
+
+.home {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .left {
+  background-color: var(--bg-color);
+  width: 620px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(8, 130, 134);
+  box-shadow: var(--box-shadow);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column-reverse; /* Image above text on small screens */
+    height: auto; /* Allow height adjustment */
+    padding: 20px; /* Add padding for breathing room */
+  }
+
+  .home .left {
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Space below image */
+    margin-bottom: 0; /* Remove bottom margin as left is now below */
+  }
+
+  .home .right {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Full width container for image */
+  }
+
+  .home .right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* optional, to match container rounding */
+  }
+}
+
+@media (max-width: 480px) {
+  .home .left {
+    padding: 15px; /* Smaller padding on very small screens */
+  }
+
+  .home .left h1 {
+    font-size: 1.5rem; /* Adjust the heading size */
+  }
+
+  .home .btn {
+    font-size: 0.9rem; /* Smaller button text */
+  }
+}
+
+
+
+
+
+
+
+ /* hvlogo */
+ /* .img{
+
+  height: 270px;
+  width: 270px;
+  border: 5px solid rgb(8, 130, 134);
+  border-radius: 100%; 
+   animation-name: superman;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+    } */
+
+/* @keyframes superman {
+  0% {
+    border-color: blue;
+    transform: translate(0, 0px);
+    box-shadow: 10px 10px 100px 50px blue;
+  }
+
+  25% {
+    border-color: rgb(239, 244, 11);
+    box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+  }
+
+  50% {
+    border-color: rgb(12, 12, 199);
+    transform: translate(0, 10px);
+    box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+  }
+
+  75% {
+    border-color: rgb(130, 217, 160);
+    box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
+  }
+
+  100% {
+    border-color: rgb(50, 55, 205);
+    transform: translate(0, -0px);
+    box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+  }
+} */
+
+/* about Section */
+
+.ex {
+  width: 100%;
+  max-width: 1200px;  /* Centered max-width container for large screens */
+  margin: auto;       /* Center horizontally */
+  padding: 4rem 1.5rem; /* Vertical and horizontal padding */
+  box-sizing: border-box;
+}
+
+.ex-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  margin: 6rem auto;  /* Keep vertical margin, center horizontally */
+  padding: 3rem;
+  width: 90%;
+  max-width: 1000px;  /* Limit max width inside container */
+  border-radius: 2rem;
+  border: 1px solid rgb(8, 130, 134);
+  box-shadow: var(--box-shadow);
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.ex-items:hover {
+  box-shadow: 0 8px 24px rgba(8, 130, 134, 0.2); /* subtle stronger shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .ex-items {
+    margin: 4rem auto;
+    padding: 2.5rem;
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ex-items {
+    flex-direction: column;  /* Stack content vertically */
+    align-items: flex-start; /* Align text left */
+    margin: 3rem auto;
+    padding: 2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ex-items {
+    padding: 1.5rem 1rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
+  }
+
+  .ex-items p {
+    font-size: 1rem;  /* Adjust font size for better mobile readability */
+  }
+}
+
+
+/* Skills */
+
+.skills {
+  width: 100%; /* Change to 100% for full width */
+  max-width: 900px; /* Maintain a maximum width */
+  margin: auto; /* Center the container */
+}
+
+.skills .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.skills .items .item {
+  flex: 1 1 calc(33.33% - 4rem); /* Allow items to grow and shrink */
+  background-color: black;
+  margin: 2rem; /* Space between items */
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0.15rem solid rgb(8, 130, 134);
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s; /* Add a transition for hover effect */
+}
+
+.skills .items .item:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.skills .items .item img {
+  width: 4rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .skills .items .item {
+    flex: 1 1 calc(50% - 4rem); /* 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills .items .item {
+    flex: 1 1 calc(100% - 4rem); /* 1 item per row on small screens */
+  }
+}
+
+/* Contact */
+
+.contact-icon {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon .items {
+  background-color: black;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid rgb(8, 130, 134);
+}
+
+.contact-icon .items:hover {
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+}
+
+.contact-icon .items .icons {
+  font-size: 2rem;
+}
